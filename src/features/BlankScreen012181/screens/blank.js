@@ -27,7 +27,7 @@ export default class Blank extends React.Component {
     Switch_7: false,
     TextInput_14: "",
     DateTimePicker_16: new Date(""),
-    TextInput_19: ""
+    TextInput_19: "250"
   }
 
   render = () => (
@@ -37,6 +37,7 @@ export default class Blank extends React.Component {
       <Switch
         activeColor="#188b09"
         inactiveColor="#72086a"
+        trackColor={{ false: "#72086a", true: "#188b09" }}
         style={styles.Switch_7}
         value={this.state.Switch_7}
         onValueChange={nextChecked => this.setState({ Switch_7: nextChecked })}
@@ -54,13 +55,14 @@ export default class Blank extends React.Component {
       />
       <DateTimePicker
         showIcon={false}
+        style={styles.DateTimePicker_16}
         date={this.state.DateTimePicker_16}
         onDateChange={selectedDate =>
           this.setState({ DateTimePicker_16: selectedDate })
         }
       />
       <TextInput
-        placeholder="Number Input Placeholder"
+        placeholder="26"
         keyboardType="numeric"
         value={this.state.TextInput_19}
         onChangeText={nextValue => this.setState({ TextInput_19: nextValue })}
@@ -109,5 +111,13 @@ const styles = StyleSheet.create({
   Image_9: {},
   TextInput_14: {},
   DateTimePicker_16: {},
+  TextInput_19: {},
+  View_1: {},
+  Text_3: { fontSize: 30, color: "#18aa30" },
+  Button_5: {},
+  Switch_7: { alignSelf: "flex-start" },
+  Image_9: {},
+  TextInput_14: {},
+  DateTimePicker_16: { color: "#bf2b2b" },
   TextInput_19: {}
 })
