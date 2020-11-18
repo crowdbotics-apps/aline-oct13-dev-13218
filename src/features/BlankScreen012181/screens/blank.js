@@ -32,10 +32,15 @@ export default class Blank extends React.Component {
       <Switch
         activeColor="#094a8b"
         inactiveColor="#d9bfd7"
-        trackColor={{ false: "#d9bfd7", true: "#094a8b" }}
         style={styles.Switch_7}
         value={this.state.Switch_7}
         onValueChange={nextChecked => this.setState({ Switch_7: nextChecked })}
+      />
+      <Image
+        source={{
+          uri:
+            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/hero_A8NvV4z.jpeg"
+        }}
       />
     </View>
   )
@@ -58,5 +63,10 @@ const styles = StyleSheet.create({
   View_1: {},
   Text_3: { fontSize: 30, color: "#18aa30" },
   Button_5: {},
-  Switch_7: { alignSelf: "flex-start" }
+  Switch_7: { alignSelf: "flex-start" },
+  View_1: {},
+  Text_3: { fontSize: 30, color: "#18aa30" },
+  Button_5: {},
+  Switch_7: { alignSelf: "flex-start" },
+  Image_9: {}
 })
