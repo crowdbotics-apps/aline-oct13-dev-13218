@@ -43,5 +43,8 @@ const styles = StyleSheet.create({
   Text_3: { color: "#18aa30" },
   View_1: {},
   Text_3: { color: "#18aa30" },
+  Button_5: {},
+  View_1: {},
+  Text_3: { fontSize: 30, color: "#18aa30" },
   Button_5: {}
 })
