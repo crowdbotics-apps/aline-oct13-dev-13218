@@ -30,9 +30,9 @@ export default class Blank extends React.Component {
       <Text style={styles.Text_3}>Sample text content</Text>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
       <Switch
-        activeColor="#094a8b"
+        activeColor="#188b09"
         inactiveColor="#72086a"
-        trackColor={{ false: "#72086a", true: "#094a8b" }}
+        trackColor={{ true: "#188b09" }}
         style={styles.Switch_7}
         value={this.state.Switch_7}
         onValueChange={nextChecked => this.setState({ Switch_7: nextChecked })}
@@ -65,6 +65,11 @@ const styles = StyleSheet.create({
   Text_3: { fontSize: 30, color: "#18aa30" },
   Button_5: {},
   Switch_7: { alignSelf: "flex-start" },
+  View_1: {},
+  Text_3: { fontSize: 30, color: "#18aa30" },
+  Button_5: {},
+  Switch_7: { alignSelf: "flex-start" },
+  Image_9: {},
   View_1: {},
   Text_3: { fontSize: 30, color: "#18aa30" },
   Button_5: {},
