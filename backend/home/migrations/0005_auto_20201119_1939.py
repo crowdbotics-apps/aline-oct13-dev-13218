@@ -6,17 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0004_remove_customtext_boolean'),
+        ("home", "0004_remove_customtext_boolean"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='homepage',
-            name='body',
+            model_name="homepage",
+            name="body",
         ),
         migrations.AddField(
-            model_name='homepage',
-            name='body_test',
+            model_name="homepage",
+            name="body_test",
             field=models.TextField(blank=True),
         ),
     ]
